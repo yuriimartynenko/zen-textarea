@@ -1,0 +1,145 @@
+:root {
+    --body-background: #339966;
+    --color-jade: #66CC99;
+    --color-gray: #f6f6f6;
+    --color-stone: #cccccc;
+    --color-kelly: #65d69d;
+    --color-skeye: #68bd93;
+}
+
+html,
+body,
+div,
+main {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+main {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-background {
+    background-color: var(--body-background);
+}
+
+.section {
+    width: 480px;
+    padding: 10px;
+}
+
+.section__form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 30px;
+    border: 2px solid var(--color-jade);
+    border-radius: 5px;
+}
+
+.section__title {
+        font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section__submit {
+    background-color: var(--color-jade);
+    border: 1px solid var(--color-kelly);
+    margin: 5px 0 0;
+    height: 39px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    outline: 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.section__submit:hover {
+    background-color: var(--color-skeye);
+}
+
+.section__textarea {
+    font-family: inherit;
+    background-color: var(--color-gray);
+    max-height: 40vh;
+    min-height: 100px;
+    margin: 5px 0 5px;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    resize: vertical;
+}
+
+.section__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__label {
+    color: var(--color-jade);
+    font-style: italic;
+}
+
+.section__toggle {
+    background-color: var(--color-gray);
+    color: darkgrey;
+    border-radius: 2px;
+    border: 0;
+    padding: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.section__toggle--position {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.section__comments {
+    background: white;
+    width: 100%;
+    height: 90vh;
+    border-radius: 5px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+.section__toggle--hidden {
+    display: none;
+}
+
+.section__item {
+    padding: 6px;
+    border-bottom: 1px dashed var(--color-stone);
+}
+
+.section__item:last-child {
+    border-bottom: 0;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
